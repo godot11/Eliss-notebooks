@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-read -p "This will undo ALL changes in the HandsOnMaterial folder, including any new files you created there. ARE YOU SURE? " -n 1 -r
+read -p "This will undo ALL changes in the HandsOnMaterial folder, including any new files you created there. ARE YOU SURE? [y/N]" -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
         # Discard all changes and restore repository to the last commit
